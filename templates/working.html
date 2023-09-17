@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <style>
+        *{
+            font-family: 'Poppins', sans-serif;
+        }
         body {
             margin: 0;
             padding: 0;
@@ -15,35 +21,46 @@
             padding: 40px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             width: 100%;
+            height: 50px;
         }
 
         .header-container {
+            background-color:#00677D;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            max-width: 1200px;
+            max-width: 1500px;
             margin: 0 auto;
         }
 
         .header-container h1 {
             margin: 0;
-            font-size: 60px;
             font-weight: bold;
-            font-family: 'Lexend', sans-serif;
             color: #ffffff;
         }
 
-        .header-container nav ul {
-            list-style: none;
+        .header-container ul {
             display: flex;
-            gap: 20px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
         }
 
-        .header-container nav ul li a {
+        .header-container li {
+            margin-left: 20px;
+        }
+
+        .header-container li:first-child {
+            margin-left: 0;
+        }
+
+        .header-container li a {
             color: #ffffff;
             text-decoration: none;
-            font-size: 26px;
+            font-size: 24px;
+            margin-right: 25px;
         }
+        
 
         main {
             display: flex;
@@ -83,32 +100,33 @@
 <body>
     <header>
         <div class="header-container">
-            <h1>TruthTracker</h1>
+            <h1 style="margin-right:100px;"><a href="\" style="text-decoration: none; color: white;">TruthTracker</a></h1>
             <nav>
-                <ul>
-                    <li><a href="/fake_news_finder" style="font-size:32px">Fake News Detection</a></li>
-                    <li><a href="/fake_video_detector" style="font-size:32px">Fake Video Detection</a></li>
-                    <li><a href="/privacy_policy" style="font-size:32px">Privacy Policy</a></li>
+                <ul style="justify-content:space-between">
+                    <li><a href="/fake_news_finder">Fake News Detection</a></li>
+                    <li><a href="/fake_video_detector">Fake Video Detection</a></li>
+                    <li><a href="/privacy_policy">Privacy Policy</a></li>
+                    <li><a href="/report">Report</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
-        <h1>How Fake Video and Fake News Detection Works</h1>
-        <p>
+        <h1 style="font-size: 30px;">How Fake Video and Fake News Detection Works</h1>
+        <p style="font-size: 20px;">
             Our fake video and fake news detection system is designed to help you identify and distinguish between real and manipulated content. Here's how it works:
         </p>
-        <ol>
+        <ol style="font-size: 20px;">
             <li>Upload Video URL or MP4 File: Use the provided input fields to either provide the URL of the video you want to analyze or upload the MP4 file directly.</li>
             <li>Analyze the Content: Click on the "Detect" button to initiate the analysis process.</li>
             <li>Processing and Analysis: Our system will process the video or news content using advanced algorithms and techniques to identify any signs of manipulation or falsehood.</li>
             <li>Results and Verification: Once the analysis is complete, the system will provide you with the results. It will indicate whether the video or news content is likely to be genuine or if there are indications of manipulation or misinformation.</li>
             <li>Make Informed Decisions: Based on the results, you can use the information to make informed decisions about the authenticity and trustworthiness of the content.</li>
         </ol>
-        <p font-weight: bold>Note: </p>
-        <p>
+        <p style="font-weight: bold;font-size: 30px;">Note: </p>
+        <p style="font-size: 20px;">
             It's important to note that while our system employs state-of-the-art techniques, it may not be 100% foolproof. It's always recommended to exercise critical thinking and verify the information from multiple reliable sources before drawing conclusions.
-        </p>
+        </p style="font-size: 20px;">
     </main>
 </body>
 </html>

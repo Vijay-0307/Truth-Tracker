@@ -4,10 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fake News Finder</title>
-    <style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+<style>
+        *{
+            font-family: 'Poppins', sans-serif;
+        }
+   
         body {
-            margin: 0;
-            padding: 0;
+            margin:0;
         }
 
         header {
@@ -15,21 +21,21 @@
             padding: 40px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             width: 100%;
+            height: 50px;
         }
 
         .header-container {
+            background-color:#00677D;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            max-width: 1200px;
+            max-width: 1500px;
             margin: 0 auto;
         }
 
         .header-container h1 {
             margin: 0;
-            font-size: 60px;
             font-weight: bold;
-            font-family: 'Lexend', sans-serif;
             color: #ffffff;
         }
 
@@ -52,8 +58,9 @@
             color: #ffffff;
             text-decoration: none;
             font-size: 24px;
+            margin-right: 25px;
         }
-
+        
         main {
             display: flex;
             flex-direction: column;
@@ -78,7 +85,6 @@
         .results-panel h2 {
             margin-top: 0;
             font-size: 48px;
-            font-family: 'Lexend', sans-serif;
         }
 
         .input-panel label,
@@ -126,18 +132,21 @@
 <body>
     <header>
         <div class="header-container">
-            <h1>Fake News Finder</h1>
-            <ul>
-                <li><a href="/fake_video_detector" style="font-size:32px">Fake Video Detection</a></li>
-                <li><a href="/working" style="font-size:32px">Working</a></li>
-                <li><a href="/privacy_policy" style="font-size:32px">Privacy Policy</a></li>
+            <h1 style="margin-right:100px;"><a href="\" style="text-decoration: none; color: white;">Fake News Finder</a></h1>
+            <nav>
+                <ul style="justify-content:space-between;">
+                <li><a href="/fake_video_detector">Fake Video Detection</a></li>
+                <li><a href="/working">Working</a></li>
+                <li><a href="/privacy_policy">Privacy Policy</a></li>
+                <li><a href="/report">Report</a></li>
             </ul>
+        </nav>
         </div>
     </header>
 
     <main>
         <div class="input-panel">
-            <h1>Fake News Finder</h1>
+            <h1 style="font-size: 30px;">Fake News Finder</h1>
             <form method="POST" action="/fake_news_finder">
                 <label for="keyword" style="font-size: 36px">Enter keyword or text:</label><br>
                 <input type="text" id="keyword" name="keyword" required><br>
